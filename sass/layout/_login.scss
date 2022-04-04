@@ -1,0 +1,326 @@
+%svg-before {
+  content: "";
+  position: absolute;
+  top: 97.5%;
+  transform: translate(-50%, -50%) rotateY(180deg);
+  width: 15rem;
+  height: 15rem;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.body-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: -1.5rem 0 5rem;
+  padding: 0 2rem;
+  background: var(--back-img-3);
+}
+
+.container {
+  background-color: var(--color-white);
+  border-radius: 1rem;
+  box-shadow: 0 1rem 2rem var(--shadow-1);
+  width: 80rem;
+  max-width: 100%;
+  min-height: 55rem;
+  overflow: hidden;
+  position: relative;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  row-gap: 2rem;
+  padding: 0 5rem;
+  height: 100%;
+  background-color: var(--color-white);
+  &__heading {
+    color: var(--color-black-3);
+    font-size: 2.5rem;
+  }
+
+  &__alternative {
+    font-size: 1rem;
+    color: var(--color-grey-dark);
+  }
+
+  &__social {
+    display: flex;
+    column-gap: 1rem;
+    &-link {
+      border: 1px solid #cfcfcf;
+      border-radius: 50%;
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      text-decoration: none;
+      padding: 0.8rem;
+      transition: all 0.3s ease-in-out;
+
+      &:hover {
+        border: 1px solid var(--color-red);
+        fill: var(--color-red);
+      }
+    }
+
+    &-icon {
+      width: 2rem;
+      height: 2rem;
+      padding: 0.2rem;
+    }
+  }
+
+  &__input {
+    max-width: 38rem;
+    width: 100%;
+    height: 5.5rem;
+    background-color: #f0f0f0;
+    border-radius: 5.5rem;
+    display: grid;
+    grid-template-columns: 15% 85%;
+    padding: 0 0.4rem;
+    position: relative;
+
+    &-field {
+      border: none;
+      background: none;
+      line-height: 1;
+      font-weight: 600;
+      color: #333;
+      font-size: 1.1rem;
+      &:focus {
+        outline: none;
+      }
+      &::placeholder {
+        color: rgb(129, 129, 129);
+        font-weight: 500;
+      }
+    }
+    &-icon {
+      width: 1.5rem;
+      height: 1.5rem;
+      align-self: center;
+      justify-self: center;
+      fill: #acacac;
+    }
+    // TOGGLE ON OFF PASSWORD ICON
+    &-toggle {
+      position: absolute;
+      right: 4%;
+      transform: translateX(-50%);
+      cursor: pointer;
+    }
+  }
+
+  &__forgot-pass {
+    color: var(--color-grey-dark);
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  // CHECKBOX
+  &__checkbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 0.5rem;
+
+    &-label {
+      font-size: 1.1rem;
+      color: var(--color-black-3);
+    }
+  }
+}
+
+.form-container {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  transition: all 0.6s ease-in-out;
+}
+
+.sign-in-container {
+  left: 0;
+  width: 50%;
+  z-index: 2;
+
+  &::before {
+    @extend %svg-before;
+    left: 18%;
+    background-image: url("../../assets/img/login/login.svg");
+  }
+}
+
+.sign-up-container {
+  left: 0;
+  width: 50%;
+  z-index: 1;
+  opacity: 0;
+
+  &::before {
+    @extend %svg-before;
+    right: -25%;
+    background-image: url("../../assets/img/login/register.svg");
+  }
+}
+
+.overlay-container {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
+  transition: transform 0.6s ease-in-out;
+  z-index: 100;
+}
+
+/* The overlay has a double width size (200%)
+so it's taking the full width of the main container.
+(200% * 50% = 100%. The 50% is from the .overlay-container)
+*/
+.overlay {
+  background: var(--color-red);
+  background-image: var(--back-img-3);
+  color: var(--color-white);
+  left: -100%;
+  height: 100%;
+  width: 200%;
+  transform: translateX(0);
+  transition: transform 0.6s ease-in-out;
+  position: relative;
+
+  &__panel {
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 4rem;
+    height: 100%;
+    width: 50%;
+    transform: translateX(0);
+    transition: transform 0.6s ease-in-out;
+  }
+
+  &__right {
+    right: 0;
+    transform: translateX(0);
+  }
+
+  &__left {
+    transform: translateX(-20%);
+  }
+
+  &__paragraph {
+    font-size: 1.2rem;
+    font-weight: 100;
+    line-height: 2rem;
+    letter-spacing: 0.5px;
+    margin: 2rem 0 3rem;
+  }
+}
+
+/* ==== ANIMATIONS ==== */
+
+// MOVE SIGNIN TO THE RIGHT
+.container.right-panel-active .sign-in-container {
+  transform: translateX(100%);
+}
+
+// MOVE OVERLAY TO THE LEFT
+.container.right-panel-active .overlay-container {
+  transform: translateX(-100%);
+}
+
+// MAKE SIGNUP VISIBLE
+.container.right-panel-active .sign-up-container {
+  transform: translateX(100%);
+  opacity: 1;
+  z-index: 5;
+}
+
+// MOVE OVERLAY BACK TO RIGHT
+.container.right-panel-active .overlay {
+  transform: translateX(50%);
+}
+
+// MOVE OVERLAY TEXT BACK TO LEFT
+.container.right-panel-active .overlay__left {
+  transform: translateX(0);
+}
+
+// MOVE OVERLAY TEXT BACK TO RIGHT
+.container.right-panel-active .overlay__right {
+  transform: translateX(20%);
+}
+
+/* ==== MESSAGE SUCCESS/FAIL POPUP ==== */
+
+.popup {
+  &__success {
+    position: fixed;
+    padding: 1rem 2rem;
+    color: var(--color-white);
+    font-size: 2rem;
+    top: -5rem;
+    transform: translateX(-50%);
+    display: block;
+    width: 100%;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.4s cubic-bezier(0.5, 1, 0.89, 1);
+    background-color: var(--color-success);
+
+    &-sticky {
+      top: 0;
+      visibility: visible;
+      opacity: 1;
+    }
+  }
+
+  &__icon {
+    width: 2rem;
+    height: 2rem;
+  }
+}
+
+// RESPONSIVE MEDIA
+
+// 592px
+.body-container {
+  @media only screen and (max-width: $bp-small) {
+    padding: 0;
+    margin: 0;
+  }
+}
+.container {
+  @media only screen and (max-width: $bp-small) {
+    width: 100%;
+    min-height: 100%;
+  }
+}
+
+.form {
+  @media only screen and (max-width: $bp-small) {
+    row-gap: 4rem;
+    padding: 0 3rem;
+  }
+}
+
+.overlay__panel {
+  @media only screen and (max-width: $bp-small) {
+    row-gap: 4rem;
+    padding: 0 1rem;
+  }
+}

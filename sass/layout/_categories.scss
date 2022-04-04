@@ -1,0 +1,23 @@
+.categories {
+  background-color: var(--color-white);
+  display: grid;
+  grid-column: center-start / center-end;
+  padding: 8rem 0;
+
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    column-gap: 10rem;
+  }
+
+  img {
+    box-shadow: 0 1.5rem 2rem var(--shadow-4);
+  }
+  // RESPONSIVE MEDIA
+  // 992px
+  @media only screen and (max-width: $bp-large) {
+    &__container {
+      gap: 4rem;
+    }
+  }
+}

@@ -1,0 +1,57 @@
+.social {
+  display: grid;
+  grid-column: full-start / full-end;
+
+  &__container {
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  }
+
+  &__box {
+    display: grid;
+    justify-items: center;
+    text-align: center;
+
+    &-img {
+      position: relative;
+      display: inline-block;
+      line-height: 13rem;
+      width: 10rem;
+      height: 10rem;
+      border-radius: 50%;
+      border: 1px solid var(--color-yellow);
+      z-index: 1;
+      margin-bottom: 1.6rem;
+
+      &::after {
+        content: "";
+        position: absolute;
+        border-radius: 50%;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: 0.7rem;
+        background-color: #f7b42c;
+        background-image: var(--back-img-1);
+        z-index: -1;
+        transition: all 0.5s;
+      }
+    }
+    &-icon {
+      width: 4rem;
+      height: 4rem;
+      transition: transform 0.3s ease;
+      &:hover {
+        transform: translateY(-3px);
+      }
+    }
+  }
+
+  &__text {
+    color: var(--color-white);
+    font-size: 1.6rem;
+    text-align: center;
+  }
+}

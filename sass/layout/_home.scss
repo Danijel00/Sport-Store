@@ -1,0 +1,112 @@
+.home {
+  display: grid;
+  background-color: var(--color-black-1);
+  grid-column: full-start / full-end;
+  margin-top: var(--header-height);
+
+  &__container {
+    display: flex;
+    justify-content: center;
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 0 3rem;
+  }
+  &__introduction {
+    display: grid;
+    justify-items: flex-start;
+    align-self: center;
+    row-gap: 3rem;
+  }
+
+  &__heading {
+    font-size: 5rem;
+    line-height: 7rem;
+  }
+
+  &__heading,
+  &__paragraph {
+    max-width: 75%;
+    animation: moveInLeft 2s cubic-bezier(0.65, 0, 0.35, 1) 2.5s;
+  }
+
+  &__paragraph {
+    font-size: 1.4rem;
+    color: var(--color-grey-dark);
+    font-style: italic;
+  }
+  &__btn {
+    animation: moveInBottom 2s cubic-bezier(0.65, 0, 0.35, 1) 3s;
+  }
+
+  &__shoe {
+    display: grid;
+    justify-self: center;
+    height: 40%;
+    width: 40%;
+    align-self: center;
+    animation: moveInRight 2s cubic-bezier(0.65, 0, 0.35, 1) 2.5s;
+  }
+}
+
+// RESPONSIVE MEDIA
+
+// 992px
+.home {
+  @media only screen and (max-width: $bp-large) {
+    &__container {
+      flex-direction: column;
+      row-gap: 6rem;
+      padding-top: 7rem;
+    }
+    &__introduction {
+      justify-items: center;
+      text-align: center;
+    }
+    &__heading,
+    &__paragraph {
+      max-width: 70%;
+    }
+    &__shoe {
+      justify-items: center;
+      &-img {
+        height: 80%;
+        width: 80%;
+      }
+    }
+  }
+  //768px
+  @media only screen and (max-width: $bp-medium) {
+    &__heading,
+    &__paragraph {
+      max-width: 75%;
+    }
+    &__shoe {
+      justify-items: center;
+      &-img {
+        height: 90%;
+        width: 90%;
+      }
+    }
+  }
+  // 592px
+  @media only screen and (max-width: $bp-small) {
+    &__container {
+      row-gap: 14rem;
+    }
+    &__heading {
+      font-size: 3.5rem;
+      line-height: 5rem;
+    }
+    &__heading,
+    &__paragraph {
+      max-width: 85%;
+    }
+    &__shoe {
+      justify-items: center;
+      &-img {
+        height: 100%;
+        width: 100%;
+      }
+    }
+  }
+}

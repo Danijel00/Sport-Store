@@ -1,0 +1,97 @@
+// MOVE IN LEFT
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+  }
+
+  80% {
+    opacity: 0.8;
+    transform: translateX(1rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+// MOVE IN RIGHT
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+  }
+
+  80% {
+    opacity: 0.8;
+    transform: translateX(-1rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+// MOVE IN BOTTOM
+@keyframes moveInBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(10rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+// ANIMATION CART
+@keyframes cart {
+  0% {
+    left: -10%;
+  }
+  40%,
+  60% {
+    left: 50%;
+  }
+  100% {
+    left: 115%;
+  }
+}
+
+// ANIMATION CART BOX
+@keyframes box {
+  0%,
+  40% {
+    top: -20%;
+  }
+  60% {
+    top: 40%;
+    left: 50%;
+  }
+  100% {
+    top: 40%;
+    left: 112%;
+  }
+}
+
+// ANIMATION CART TEXT
+@keyframes add-txt {
+  0% {
+    opacity: 1;
+  }
+  20%,
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes added-txt {
+  0%,
+  80% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

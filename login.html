@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- FAVICON -->
+    <link
+      rel="icon"
+      type="image/png"
+      href="assets/img/favicon/favicon-32x32.png"
+      sizes="32x32"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="assets/img/favicon/favicon-16x16.png"
+      sizes="16x16"
+    />
+    <!-- ==== STYLES ==== -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <!-- ==== GOOGLE FONTS ==== -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <!-- ==== SWIPER CSS ==== -->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
+    <title>Sport Center — Sign in & Sign up page</title>
+  </head>
+  <body class="body-container">
+    <div class="container" id="container">
+      <div class="form-container sign-up-container">
+        <form action="" class="form center-text">
+          <h1 class="form__heading">Create Account</h1>
+          <div class="form__social">
+            <a href="#" class="form__social-link">
+              <svg class="form__social-icon">
+                <use href="assets/img/sprite.svg#icon-facebook"></use>
+              </svg>
+            </a>
+            <a href="#" class="form__social-link">
+              <svg class="form__social-icon">
+                <use href="assets/img/sprite.svg#icon-google"></use>
+              </svg>
+            </a>
+            <a href="#" class="form__social-link">
+              <svg class="form__social-icon">
+                <use href="assets/img/sprite.svg#icon-linkedin"></use>
+              </svg>
+            </a>
+          </div>
+          <span class="form__alternative"
+            >or use your email for registration</span
+          >
+          <div class="form__input">
+            <svg class="form__input-icon">
+              <use href="assets/img/sprite.svg#icon-user"></use>
+            </svg>
+            <input
+              class="form__input-field"
+              type="text"
+              id="user-id"
+              placeholder="Username"
+              required
+            />
+          </div>
+          <div class="form__input">
+            <svg class="form__input-icon">
+              <use href="assets/img/sprite.svg#icon-envelop"></use>
+            </svg>
+            <input
+              class="form__input-field"
+              type="email"
+              id="email-id"
+              placeholder="Email"
+              required
+            />
+          </div>
+          <div class="form__input">
+            <svg class="form__input-icon">
+              <use href="assets/img/sprite.svg#icon-lock-closed"></use>
+            </svg>
+            <input
+              class="form__input-field"
+              type="password"
+              id="pass-id"
+              placeholder="Password"
+              required
+            />
+          </div>
+          <button class="btn btn--sing-in-up" id="submit-btn">Sign up</button>
+        </form>
+      </div>
+      <div class="form-container sign-in-container">
+        <form class="form center-text">
+          <h1 class="form__heading">Sign in</h1>
+          <div class="form__social">
+            <a href="#" class="form__social-link">
+              <svg class="form__social-icon">
+                <use href="assets/img/sprite.svg#icon-facebook"></use>
+              </svg>
+            </a>
+            <a href="#" class="form__social-link">
+              <svg class="form__social-icon">
+                <use href="assets/img/sprite.svg#icon-google"></use>
+              </svg>
+            </a>
+            <a href="#" class="form__social-link">
+              <svg class="form__social-icon">
+                <use href="assets/img/sprite.svg#icon-linkedin"></use>
+              </svg>
+            </a>
+          </div>
+          <span class="form__alternative">or use your account</span>
+          <div class="form__input">
+            <svg class="form__input-icon">
+              <use href="assets/img/sprite.svg#icon-envelop"></use>
+            </svg>
+            <input
+              class="form__input-field"
+              type="email"
+              id=""
+              placeholder="Email"
+              required
+            />
+          </div>
+          <div class="form__input">
+            <svg class="form__input-icon">
+              <use href="assets/img/sprite.svg#icon-lock-closed"></use>
+            </svg>
+            <input
+              class="form__input-field"
+              type="password"
+              id=""
+              placeholder="Password"
+              required
+            />
+          </div>
+          <div class="form__checkbox">
+            <input class="form__checkbox-click" type="checkbox" id="" />
+            <label class="form__checkbox-label" for="input-checkbox"
+              >Keep me Signed in</label
+            >
+          </div>
+          <a href="#" class="form__forgot-pass">Forgot your password?</a>
+          <button class="btn btn--sing-in-up" id="">Sign in</button>
+        </form>
+      </div>
+      <div class="overlay-container">
+        <div class="overlay">
+          <div class="overlay__panel center-text overlay__left">
+            <h1 class="form__heading">Welcome Back!</h1>
+            <p class="overlay__paragraph">
+              To keep connected with us please login with your personal info
+            </p>
+            <button class="btn--ghost" id="signIn">Sign in</button>
+          </div>
+          <div class="overlay__panel center-text overlay__right">
+            <h1 class="form__heading">Hello Friend!</h1>
+            <p class="overlay__paragraph">
+              If you don't have an account, please click the button below to
+              join us!
+            </p>
+            <button class="btn--ghost" id="signUp">Sign up</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ==== LOGIN-PANEL JS ==== -->
+    <script src="assets/js/login-panel.js"></script>
+  </body>
+</html>

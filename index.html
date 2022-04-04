@@ -1,0 +1,1084 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- FAVICON -->
+    <link
+      rel="icon"
+      type="image/png"
+      href="assets/img/favicon/favicon-32x32.png"
+      sizes="32x32"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="assets/img/favicon/favicon-16x16.png"
+      sizes="16x16"
+    />
+    <!-- ==== STYLES ==== -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <!-- ==== GOOGLE FONTS ==== -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <!-- ==== SWIPER CSS ==== -->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
+    <title>Sport Center — E-commerce shop</title>
+  </head>
+  <body>
+    <!-- ==== HEADER ==== -->
+    <header id="header" class="header">
+      <nav class="nav">
+        <div class="nav__logo">
+          <a href="#home">
+            <img src="assets/img/header/sportlogo.png" alt="Logo" />
+          </a>
+        </div>
+        <!-- ==== HAMBURGER MENU ==== -->
+        <div class="nav__burger">
+          <span class="nav__burger-line"></span>
+          <span class="nav__burger-line"></span>
+          <span class="nav__burger-line"></span>
+        </div>
+        <ul class="nav__menu">
+          <li class="nav__list">
+            <a href="#home" class="nav__item active-link">Home</a>
+          </li>
+          <li class="nav__list">
+            <a href="#products" class="nav__item">Products</a>
+          </li>
+          <li class="nav__list">
+            <a href="#offer" class="nav__item">Offer</a>
+          </li>
+          <li class="nav__list">
+            <a href="#testimonial" class="nav__item">Testimonial</a>
+          </li>
+          <li class="nav__list">
+            <a href="#contact" class="nav__item">Contact</a>
+          </li>
+          <li class="nav__list">
+            <a href="login.html" class="nav__item nav__login" id="signout-link"
+              >Login</a
+            >
+          </li>
+        </ul>
+
+        <div class="nav__cart show-cart">
+          <svg class="nav__cart-icon">
+            <use href="assets/img/sprite.svg#icon-shopping-basket"></use>
+          </svg>
+          <span class="nav__cart-count">0</span>
+        </div>
+        <div class="nav__user">
+          <svg class="nav__user-icon">
+            <use href="assets/img/sprite.svg#icon-user"></use>
+          </svg>
+          <span class="nav__user-name" id="user-link">Username</span>
+        </div>
+      </nav>
+    </header>
+
+    <!-- ==== MAIN CONTENT ==== -->
+    <main class="grid-container">
+      <!-- ==== HOME SECTION==== -->
+      <section class="home" id="home">
+        <div class="home__container">
+          <div class="home__introduction">
+            <h1 class="heading-1 home__heading">
+              Give Your Workout A New Style!
+            </h1>
+            <p class="home__paragraph">
+              Success isn't always about greatness. It's about consistency.
+              Consistent hard work gains success. Practice makes Perfect!
+            </p>
+            <a href="#products"
+              ><button class="btn btn--white home__btn">
+                Explore now ➥
+              </button></a
+            >
+          </div>
+          <div class="home__shoe">
+            <img
+              class="home__shoe-img"
+              src="assets/img/home/shoe.jpg"
+              alt="Shoe"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- ==== CATEGORIES ==== -->
+      <div class="categories">
+        <div class="categories__container">
+          <img src="assets/img/category/category-1.jpg" alt="cate-1" />
+          <img src="assets/img/category/category-2.jpg" alt="cate-2" />
+          <img src="assets/img/category/category-3.jpg" alt="cate-3" />
+        </div>
+      </div>
+
+      <!-- ==== PRODUCTS ==== -->
+      <section id="products" class="products">
+        <h1 class="heading-1 section__title center-text mb-big">
+          Featured Products
+        </h1>
+        <div class="products__container swiper">
+          <div class="swiper-wrapper">
+            <div class="product swiper-slide">
+              <div class="product__wrapper">
+                <figure class="product__figure">
+                  <img
+                    class="product__figure-img"
+                    src="assets/img/featured/featured-1.jpg"
+                    alt="featured-1"
+                  />
+                  <figcaption class="product__figure-cap">
+                    Men's Pullover Training Hoodie Nike Therma Color (Grey)
+                  </figcaption>
+                </figure>
+                <span class="product__price">$50</span>
+                <div class="product__interact">
+                  <a class="product__look" href="#">
+                    <svg class="product__look">
+                      <use href="assets/img/sprite.svg#icon-eye"></use></svg
+                  ></a>
+                  <button class="product__btn">
+                    <span class="product__btn-add">Add to cart</span>
+                    <span class="product__btn-added">Added</span>
+                    <svg class="product__icon-cart">
+                      <use
+                        href="assets/img/sprite.svg#icon-shopping-basket"
+                      ></use>
+                    </svg>
+                    <svg class="product__icon-box">
+                      <use href="assets/img/sprite.svg#icon-box-add"></use>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="product swiper-slide">
+              <div class="product__wrapper">
+                <figure class="product__figure">
+                  <img
+                    class="product__figure-img"
+                    src="assets/img/featured/featured-2.jpg"
+                    alt="featured-2"
+                  />
+                  <figcaption class="product__figure-cap">
+                    Men's Pullover Training Hoodie Nike Therma Color (Grey)
+                  </figcaption>
+                </figure>
+                <span class="product__price">$50</span>
+                <div class="product__interact">
+                  <a class="product__look" href="#">
+                    <svg class="product__look">
+                      <use href="assets/img/sprite.svg#icon-eye"></use></svg
+                  ></a>
+                  <button class="product__btn">
+                    <span class="product__btn-add">Add to cart</span>
+                    <span class="product__btn-added">Added</span>
+                    <svg class="product__icon-cart">
+                      <use
+                        href="assets/img/sprite.svg#icon-shopping-basket"
+                      ></use>
+                    </svg>
+                    <svg class="product__icon-box">
+                      <use href="assets/img/sprite.svg#icon-box-add"></use>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="product swiper-slide">
+              <div class="product__wrapper">
+                <figure class="product__figure">
+                  <img
+                    class="product__figure-img"
+                    src="assets/img/featured/featured-3.jpg"
+                    alt="featured-3"
+                  />
+                  <figcaption class="product__figure-cap">
+                    Men's Pullover Training Hoodie Nike Therma Color (Grey)
+                  </figcaption>
+                </figure>
+                <span class="product__price">$50</span>
+                <div class="product__interact">
+                  <a class="product__look" href="#">
+                    <svg class="product__look">
+                      <use href="assets/img/sprite.svg#icon-eye"></use></svg
+                  ></a>
+                  <button class="product__btn">
+                    <span class="product__btn-add">Add to cart</span>
+                    <span class="product__btn-added">Added</span>
+                    <svg class="product__icon-cart">
+                      <use
+                        href="assets/img/sprite.svg#icon-shopping-basket"
+                      ></use>
+                    </svg>
+                    <svg class="product__icon-box">
+                      <use href="assets/img/sprite.svg#icon-box-add"></use>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="product swiper-slide">
+              <div class="product__wrapper">
+                <figure class="product__figure">
+                  <img
+                    class="product__figure-img"
+                    src="assets/img/featured/featured-4.jpg"
+                    alt="featured-4"
+                  />
+                  <figcaption class="product__figure-cap">
+                    Men's Pullover Training Hoodie Nike Therma Color (Grey)
+                  </figcaption>
+                </figure>
+                <span class="product__price">$50</span>
+                <div class="product__interact">
+                  <a class="product__look" href="#">
+                    <svg class="product__look">
+                      <use href="assets/img/sprite.svg#icon-eye"></use></svg
+                  ></a>
+                  <button class="product__btn">
+                    <span class="product__btn-add">Add to cart</span>
+                    <span class="product__btn-added">Added</span>
+                    <svg class="product__icon-cart">
+                      <use
+                        href="assets/img/sprite.svg#icon-shopping-basket"
+                      ></use>
+                    </svg>
+                    <svg class="product__icon-box">
+                      <use href="assets/img/sprite.svg#icon-box-add"></use>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="product swiper-slide">
+              <div class="product__wrapper">
+                <figure class="product__figure">
+                  <img
+                    class="product__figure-img"
+                    src="assets/img/featured/featured-5.jpg"
+                    alt="featured-5"
+                  />
+                  <figcaption class="product__figure-cap">
+                    Women's Terry Tie-Dye Training Hoodie Color (Amethyst Wave)
+                  </figcaption>
+                </figure>
+                <span class="product__price">$65</span>
+                <div class="product__interact">
+                  <a class="product__look" href="#">
+                    <svg class="product__look">
+                      <use href="assets/img/sprite.svg#icon-eye"></use></svg
+                  ></a>
+                  <button class="product__btn">
+                    <span class="product__btn-add">Add to cart</span>
+                    <span class="product__btn-added">Added</span>
+                    <svg class="product__icon-cart">
+                      <use
+                        href="assets/img/sprite.svg#icon-shopping-basket"
+                      ></use>
+                    </svg>
+                    <svg class="product__icon-box">
+                      <use href="assets/img/sprite.svg#icon-box-add"></use>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="product swiper-slide">
+              <div class="product__wrapper">
+                <figure class="product__figure">
+                  <img
+                    class="product__figure-img"
+                    src="assets/img/featured/featured-6.jpg"
+                    alt="featured-6"
+                  />
+                  <figcaption class="product__figure-cap">
+                    Women's Short-Sleeve Cropped Top Color (Grey/Heather/Black)
+                  </figcaption>
+                </figure>
+                <span class="product__price">$60</span>
+                <div class="product__interact">
+                  <a class="product__look" href="#">
+                    <svg class="product__look">
+                      <use href="assets/img/sprite.svg#icon-eye"></use></svg
+                  ></a>
+                  <button class="product__btn">
+                    <span class="product__btn-add">Add to cart</span>
+                    <span class="product__btn-added">Added</span>
+                    <svg class="product__icon-cart">
+                      <use
+                        href="assets/img/sprite.svg#icon-shopping-basket"
+                      ></use>
+                    </svg>
+                    <svg class="product__icon-box">
+                      <use href="assets/img/sprite.svg#icon-box-add"></use>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="product swiper-slide">
+              <div class="product__wrapper">
+                <figure class="product__figure">
+                  <img
+                    class="product__figure-img"
+                    src="assets/img/featured/featured-7.jpg"
+                    alt="featured-7"
+                  />
+                  <figcaption class="product__figure-cap">
+                    Women's Mock Fleece Color (Bicoastal/Jade Smoke/White)
+                  </figcaption>
+                </figure>
+                <span class="product__price">$70</span>
+                <div class="product__interact">
+                  <a class="product__look" href="#">
+                    <svg class="product__look">
+                      <use href="assets/img/sprite.svg#icon-eye"></use></svg
+                  ></a>
+                  <button class="product__btn">
+                    <span class="product__btn-add">Add to cart</span>
+                    <span class="product__btn-added">Added</span>
+                    <svg class="product__icon-cart">
+                      <use
+                        href="assets/img/sprite.svg#icon-shopping-basket"
+                      ></use>
+                    </svg>
+                    <svg class="product__icon-box">
+                      <use href="assets/img/sprite.svg#icon-box-add"></use>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="product swiper-slide">
+              <div class="product__wrapper">
+                <figure class="product__figure">
+                  <img
+                    class="product__figure-img"
+                    src="assets/img/featured/featured-8.jpg"
+                    alt="featured-8"
+                  />
+                  <figcaption class="product__figure-cap">
+                    Women's V-Neck Sports Bra Color (Marina/Washed Teal)
+                  </figcaption>
+                </figure>
+                <span class="product__price">$35</span>
+                <div class="product__interact">
+                  <a class="product__look" href="#">
+                    <svg class="product__look">
+                      <use href="assets/img/sprite.svg#icon-eye"></use></svg
+                  ></a>
+                  <button class="product__btn">
+                    <span class="product__btn-add">Add to cart</span>
+                    <span class="product__btn-added">Added</span>
+                    <svg class="product__icon-cart">
+                      <use
+                        href="assets/img/sprite.svg#icon-shopping-basket"
+                      ></use>
+                    </svg>
+                    <svg class="product__icon-box">
+                      <use href="assets/img/sprite.svg#icon-box-add"></use>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--==== Latest Products ====-->
+        <h2 class="heading-1 section__title center-text mb-big">
+          Latest Products
+        </h2>
+        <div class="products__container latest__container">
+          <div class="product">
+            <div class="product__wrapper">
+              <figure class="product__figure">
+                <img
+                  class="product__figure-img"
+                  src="assets/img/latest/latest-1.jpg"
+                  alt="latest-1"
+                />
+                <figcaption class="product__figure-cap">
+                  Men's Long-Sleeve Top Nike Pro Color (Light Army/Black)
+                </figcaption>
+              </figure>
+              <span class="product__price">$50</span>
+              <div class="product__interact">
+                <a class="product__look" href="#">
+                  <svg class="product__look">
+                    <use href="assets/img/sprite.svg#icon-eye"></use></svg
+                ></a>
+                <button class="product__btn">
+                  <span class="product__btn-add">Add to cart</span>
+                  <span class="product__btn-added">Added</span>
+                  <svg class="product__icon-cart">
+                    <use
+                      href="assets/img/sprite.svg#icon-shopping-basket"
+                    ></use>
+                  </svg>
+                  <svg class="product__icon-box">
+                    <use href="assets/img/sprite.svg#icon-box-add"></use>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="product">
+            <div class="product__wrapper">
+              <figure class="product__figure">
+                <img
+                  class="product__figure-img"
+                  src="assets/img/latest/latest-2.jpg"
+                  alt="latest-2"
+                />
+                <figcaption class="product__figure-cap">
+                  Men's Long-Sleeve Top Nike Pro Color (Obsidian/Ocean Fog)
+                </figcaption>
+              </figure>
+              <span class="product__price">$50</span>
+              <div class="product__interact">
+                <a class="product__look" href="#">
+                  <svg class="product__look">
+                    <use href="assets/img/sprite.svg#icon-eye"></use></svg
+                ></a>
+                <button class="product__btn">
+                  <span class="product__btn-add">Add to cart</span>
+                  <span class="product__btn-added">Added</span>
+                  <svg class="product__icon-cart">
+                    <use
+                      href="assets/img/sprite.svg#icon-shopping-basket"
+                    ></use>
+                  </svg>
+                  <svg class="product__icon-box">
+                    <use href="assets/img/sprite.svg#icon-box-add"></use>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="product">
+            <div class="product__wrapper">
+              <figure class="product__figure">
+                <img
+                  class="product__figure-img"
+                  src="assets/img/latest/latest-3.jpg"
+                  alt="latest-3"
+                />
+                <figcaption class="product__figure-cap">
+                  Women's Infinalon Jumpsuit Color Royal Pulse/Aluminum
+                </figcaption>
+              </figure>
+              <span class="product__price">$110</span>
+              <div class="product__interact">
+                <a class="product__look" href="#">
+                  <svg class="product__look">
+                    <use href="assets/img/sprite.svg#icon-eye"></use></svg
+                ></a>
+                <button class="product__btn">
+                  <span class="product__btn-add">Add to cart</span>
+                  <span class="product__btn-added">Added</span>
+                  <svg class="product__icon-cart">
+                    <use
+                      href="assets/img/sprite.svg#icon-shopping-basket"
+                    ></use>
+                  </svg>
+                  <svg class="product__icon-box">
+                    <use href="assets/img/sprite.svg#icon-box-add"></use>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="product">
+            <div class="product__wrapper">
+              <figure class="product__figure">
+                <img
+                  class="product__figure-img"
+                  src="assets/img/latest/latest-4.jpg"
+                  alt="latest-4"
+                />
+                <figcaption class="product__figure-cap">
+                  Women's High-Support Zip-Front Sports Bra Color (Violet)
+                </figcaption>
+              </figure>
+              <span class="product__price">$40</span>
+              <div class="product__interact">
+                <a class="product__look" href="#">
+                  <svg class="product__look">
+                    <use href="assets/img/sprite.svg#icon-eye"></use></svg
+                ></a>
+                <button class="product__btn">
+                  <span class="product__btn-add">Add to cart</span>
+                  <span class="product__btn-added">Added</span>
+                  <svg class="product__icon-cart">
+                    <use
+                      href="assets/img/sprite.svg#icon-shopping-basket"
+                    ></use>
+                  </svg>
+                  <svg class="product__icon-box">
+                    <use href="assets/img/sprite.svg#icon-box-add"></use>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="product">
+            <div class="product__wrapper">
+              <figure class="product__figure">
+                <img
+                  class="product__figure-img"
+                  src="assets/img/latest/latest-5.jpg"
+                  alt="latest-5"
+                />
+                <figcaption class="product__figure-cap">
+                  Women's Training Bag Color (Iced Lilac / Wild Berry)
+                </figcaption>
+              </figure>
+              <span class="product__price">$45</span>
+              <div class="product__interact">
+                <a class="product__look" href="#">
+                  <svg class="product__look">
+                    <use href="assets/img/sprite.svg#icon-eye"></use></svg
+                ></a>
+                <button class="product__btn">
+                  <span class="product__btn-add">Add to cart</span>
+                  <span class="product__btn-added">Added</span>
+                  <svg class="product__icon-cart">
+                    <use
+                      href="assets/img/sprite.svg#icon-shopping-basket"
+                    ></use>
+                  </svg>
+                  <svg class="product__icon-box">
+                    <use href="assets/img/sprite.svg#icon-box-add"></use>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="product">
+            <div class="product__wrapper">
+              <figure class="product__figure">
+                <img
+                  class="product__figure-img"
+                  src="assets/img/latest/latest-6.jpg"
+                  alt="latest-6"
+                />
+                <figcaption class="product__figure-cap">
+                  Men's Shoes Air Jordan 1 Mid Color (Crimson/Black/White)
+                </figcaption>
+              </figure>
+              <span class="product__price">$120</span>
+              <div class="product__interact">
+                <a class="product__look" href="#">
+                  <svg class="product__look">
+                    <use href="assets/img/sprite.svg#icon-eye"></use></svg
+                ></a>
+                <button class="product__btn">
+                  <span class="product__btn-add">Add to cart</span>
+                  <span class="product__btn-added">Added</span>
+                  <svg class="product__icon-cart">
+                    <use
+                      href="assets/img/sprite.svg#icon-shopping-basket"
+                    ></use>
+                  </svg>
+                  <svg class="product__icon-box">
+                    <use href="assets/img/sprite.svg#icon-box-add"></use>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="product">
+            <div class="product__wrapper">
+              <figure class="product__figure">
+                <img
+                  class="product__figure-img"
+                  src="assets/img/latest/latest-7.jpg"
+                  alt="latest-7"
+                />
+                <figcaption class="product__figure-cap">
+                  Space Hippie 04 Color (Dark Stucco/Light Bone/Green Glow)
+                </figcaption>
+              </figure>
+              <span class="product__price">$130</span>
+              <div class="product__interact">
+                <a class="product__look" href="#">
+                  <svg class="product__look">
+                    <use href="assets/img/sprite.svg#icon-eye"></use></svg
+                ></a>
+                <button class="product__btn">
+                  <span class="product__btn-add">Add to cart</span>
+                  <span class="product__btn-added">Added</span>
+                  <svg class="product__icon-cart">
+                    <use
+                      href="assets/img/sprite.svg#icon-shopping-basket"
+                    ></use>
+                  </svg>
+                  <svg class="product__icon-box">
+                    <use href="assets/img/sprite.svg#icon-box-add"></use>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="product">
+            <div class="product__wrapper">
+              <figure class="product__figure">
+                <img
+                  class="product__figure-img"
+                  src="assets/img/latest/latest-8.jpg"
+                  alt="latest-8"
+                />
+                <figcaption class="product__figure-cap">
+                  Nike Air Zoom NEXT% Color (Turquoise/Black Aqua/White)
+                </figcaption>
+              </figure>
+              <span class="product__price">$275</span>
+              <div class="product__interact">
+                <a class="product__look" href="#">
+                  <svg class="product__look">
+                    <use href="assets/img/sprite.svg#icon-eye"></use></svg
+                ></a>
+                <button class="product__btn">
+                  <span class="product__btn-add">Add to cart</span>
+                  <span class="product__btn-added">Added</span>
+                  <svg class="product__icon-cart">
+                    <use
+                      href="assets/img/sprite.svg#icon-shopping-basket"
+                    ></use>
+                  </svg>
+                  <svg class="product__icon-box">
+                    <use href="assets/img/sprite.svg#icon-box-add"></use>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== OFFER SECTION ===== -->
+      <section class="offer mb-big mb-big" id="offer">
+        <div class="offer__container">
+          <div class="offer__glasses">
+            <img
+              src="assets/img/offer/offer-1.jpg"
+              alt="glasses-1"
+              class="visible"
+              id="img1"
+            />
+            <img
+              src="assets/img/offer/offer-2.jpg"
+              alt="glasses-2"
+              class="hidden"
+              id="img2"
+            />
+            <img
+              src="assets/img/offer/offer-3.jpg"
+              alt="glasses-3"
+              class="hidden"
+              id="img3"
+            />
+          </div>
+          <div class="offer__details">
+            <h2 class="heading-1 offer__title">
+              Exclusively Available in our shop
+            </h2>
+            <span class="offer__name">Sunglasses Nike Circuit Polarized</span>
+            <p class="offer__paragraph">
+              With their square lenses and keyhole nose bridge, the Nike Circuit
+              Polarized Sunglasses carve a strong style path. Lightweight
+              materials and subtle nose-pad detail make them super wearable.
+              Polarized lenses reduce reflective glare from snow and water Nylon
+              frame is lightweight and durable. Soft, comfortable rubber inlay
+              nose pads provide stability and grip. 4-base flat lens and slim
+              profile offer everyday coverage.
+            </p>
+            <button class="offer__btn btn btn--white">Explore now</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== FACILITY ===== -->
+      <div class="facility mb-big">
+        <div class="facility__container">
+          <div class="facility__box">
+            <div class="facility__box-img">
+              <svg class="facility__box-icon">
+                <use href="assets/img/sprite.svg#icon-airplane"></use>
+              </svg>
+            </div>
+            <span class="facility__text">FREE SHIPPING WORLD WIDE</span>
+          </div>
+          <div class="facility__box">
+            <div class="facility__box-img">
+              <svg class="facility__box-icon">
+                <use href="assets/img/sprite.svg#icon-credit-card-alt"></use>
+              </svg>
+            </div>
+            <span class="facility__text">100% MONEY BACK GUARANTEE</span>
+          </div>
+          <div class="facility__box">
+            <div class="facility__box-img">
+              <svg class="facility__box-icon">
+                <use href="assets/img/sprite.svg#icon-credit-card"></use>
+              </svg>
+            </div>
+            <span class="facility__text">MANY PAYMENT GATEWAY</span>
+          </div>
+          <div class="facility__box">
+            <div class="facility__box-img">
+              <svg class="facility__box-icon">
+                <use href="assets/img/sprite.svg#icon-headphones"></use>
+              </svg>
+            </div>
+            <span class="facility__text">24/7 ONLINE SUPPORT</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- ===== TESTIMONIAL SECTION ===== -->
+      <section class="testimonial center-text" id="testimonial">
+        <div class="testimonial__container swiper">
+          <div class="swiper-wrapper">
+            <!-- PROFILE 1 -->
+            <div class="testimonial__box swiper-slide">
+              <img
+                class="testimonial__img"
+                src="assets/img/profiles/profile-1.jpg"
+                alt="profile-1"
+              />
+              <h2 class="heading-2">Murray Donovan</h2>
+              <p class="testimonial__description">
+                The Nike Air VaporMax Triple Black is a shoe you would wanna
+                wear all the time, not only is it super comfortable with a bit
+                of “air” beneath your feet, it’s also literally beautiful to
+                look at, compliment anything kind of outfit you have on with
+                super strong and sturdy laces that don’t loosen for any reason.
+                Recommended for anyone who likes Nike shoes to begin with.
+              </p>
+              <div class="testimonial__rating">
+                <svg class="testimonial__rating-star">
+                  <use href="assets/img/sprite.svg#icon-star-full"></use>
+                </svg>
+                <svg class="testimonial__rating-star">
+                  <use href="assets/img/sprite.svg#icon-star-full"></use>
+                </svg>
+                <svg class="testimonial__rating-star">
+                  <use href="assets/img/sprite.svg#icon-star-full"></use>
+                </svg>
+                <svg class="testimonial__rating-star">
+                  <use href="assets/img/sprite.svg#icon-star-full"></use>
+                </svg>
+                <svg class="testimonial__rating-star">
+                  <use href="assets/img/sprite.svg#icon-star-full"></use>
+                </svg>
+              </div>
+            </div>
+            <!-- PROFILE 2 -->
+            <div class="testimonial__box swiper-slide">
+              <img
+                class="testimonial__img"
+                src="assets/img/profiles/profile-2.jpg"
+                alt="profile-2"
+              />
+              <h2 class="heading-2">Candice Horbacz</h2>
+              <p class="testimonial__description">
+                This is a professional store, well-stocked, great customer
+                service representatives, ready to answer your questions or help
+                you find something, courteous and well mannered and a pleasure
+                to be around. If the store has it in stock they will find it for
+                you.
+              </p>
+              <div class="testimonial__rating">
+                <svg class="testimonial__rating-star">
+                  <use href="assets/img/sprite.svg#icon-star-full"></use>
+                </svg>
+                <svg class="testimonial__rating-star">
+                  <use href="assets/img/sprite.svg#icon-star-full"></use>
+                </svg>
+                <svg class="testimonial__rating-star">
+                  <use href="assets/img/sprite.svg#icon-star-full"></use>
+                </svg>
+                <svg class="testimonial__rating-star">
+                  <use href="assets/img/sprite.svg#icon-star-full"></use>
+                </svg>
+                <svg class="testimonial__rating-star">
+                  <use href="assets/img/sprite.svg#icon-star-full"></use>
+                </svg>
+              </div>
+            </div>
+            <!-- PROFILE 3 -->
+            <div class="testimonial__box swiper-slide">
+              <img
+                class="testimonial__img"
+                src="assets/img/profiles/profile-3.jpg"
+                alt="profile-3"
+              />
+              <h2 class="heading-2">Clark Kent</h2>
+              <p class="testimonial__description">
+                My experience with Sport Center was good. The store has great
+                prices on most products. The store has everything you need when
+                it comes to sporting goods. Sport Center is a one stop shop. I
+                would differently return to the Sport Center store. Also the
+                Sales associate were awesome, friendly and knew their product.
+              </p>
+              <div class="testimonial__rating">
+                <svg class="testimonial__rating-star">
+                  <use href="assets/img/sprite.svg#icon-star-full"></use>
+                </svg>
+                <svg class="testimonial__rating-star">
+                  <use href="assets/img/sprite.svg#icon-star-full"></use>
+                </svg>
+                <svg class="testimonial__rating-star">
+                  <use href="assets/img/sprite.svg#icon-star-full"></use>
+                </svg>
+                <svg class="testimonial__rating-star">
+                  <use href="assets/img/sprite.svg#icon-star-full"></use>
+                </svg>
+                <svg class="testimonial__rating-star">
+                  <use href="assets/img/sprite.svg#icon-star-empty"></use>
+                </svg>
+              </div>
+            </div>
+            <!-- PROFILE 4 -->
+            <div class="testimonial__box swiper-slide">
+              <img
+                class="testimonial__img"
+                src="assets/img/profiles/profile-4.jpg"
+                alt="profile-4"
+              />
+              <h2 class="heading-2">Danijel Kocić</h2>
+              <p class="testimonial__description">
+                I really enjoyed the services they are providing. I am the
+                regular customer and I have never encounter any inconvenience
+                regarding the product. Keeping an eye on the necessities of
+                consumers significantly helps them to improve their services.
+                Really appreciable.
+              </p>
+
+              <div class="testimonial__rating">
+                <svg class="testimonial__rating-star">
+                  <use href="assets/img/sprite.svg#icon-star-full"></use>
+                </svg>
+                <svg class="testimonial__rating-star">
+                  <use href="assets/img/sprite.svg#icon-star-full"></use>
+                </svg>
+                <svg class="testimonial__rating-star">
+                  <use href="assets/img/sprite.svg#icon-star-full"></use>
+                </svg>
+                <svg class="testimonial__rating-star">
+                  <use href="assets/img/sprite.svg#icon-star-full"></use>
+                </svg>
+                <svg class="testimonial__rating-star">
+                  <use href="assets/img/sprite.svg#icon-star-empty"></use>
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
+      </section>
+
+      <!-- ==== CATEGORIES ==== -->
+      <div class="categories">
+        <div class="categories__container">
+          <img src="assets/img/category/category-4.jpg" alt="cate-4" />
+          <img src="assets/img/category/category-5.jpg" alt="cate-5" />
+          <img src="assets/img/category/category-6.jpg" alt="cate-6" />
+        </div>
+      </div>
+    </main>
+
+    <!-- ==== FOOTER ==== -->
+    <footer class="footer" id="contact">
+      <div class="footer__container">
+        <div class="footer__box">
+          <h3 class="heading-3 mb-small footer__text">EXTRAS</h3>
+          <ul class="footer__menu">
+            <li class="footer__link">
+              <a href="#" class="footer__item">Brands</a>
+            </li>
+            <li class="footer__link">
+              <a href="#" class="footer__item">Gift Certificates</a>
+            </li>
+            <li class="footer__link">
+              <a href="#" class="footer__item">Affiliate</a>
+            </li>
+            <li class="footer__link">
+              <a href="#" class="footer__item">Special</a>
+            </li>
+            <li class="footer__link">
+              <a href="#" class="footer__item">Site Map</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__box">
+          <h3 class="heading-3 mb-small footer__text">INFORMATION</h3>
+          <ul class="footer__menu">
+            <li class="footer__link">
+              <a href="#" class="footer__item">About Us</a>
+            </li>
+            <li class="footer__link">
+              <a href="#" class="footer__item">Privacy Policy</a>
+            </li>
+            <li class="footer__link">
+              <a href="#" class="footer__item">Terms & Condition</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__box">
+          <h3 class="heading-3 mb-small footer__text">INFORMATION</h3>
+          <ul class="footer__menu">
+            <li class="footer__link">
+              <a href="#" class="footer__item">My Account</a>
+            </li>
+            <li class="footer__link">
+              <a href="#" class="footer__item">Order History</a>
+            </li>
+            <li class="footer__link">
+              <a href="#" class="footer__item">Wish List</a>
+            </li>
+            <li class="footer__link">
+              <a href="#" class="footer__item">Newsletter</a>
+            </li>
+            <li class="footer__link">
+              <a href="#" class="footer__item">Returns</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__box">
+          <h3 class="heading-3 mb-small footer__text">CONTACT US</h3>
+          <ul class="footer__menu">
+            <li class="footer__link">
+              <a href="#" class="footer__item">
+                <svg class="footer__item-icon">
+                  <use href="assets/img/sprite.svg#icon-location"></use>
+                </svg>
+                8855 Ohio St. Vista, CA 92083
+              </a>
+            </li>
+            <li class="footer__link">
+              <a href="#" class="footer__item">
+                <svg class="footer__item-icon">
+                  <use href="assets/img/sprite.svg#icon-envelop"></use>
+                </svg>
+                email@email.com</a
+              >
+            </li>
+            <li class="footer__link">
+              <a href="#" class="footer__item">
+                <svg class="footer__item-icon">
+                  <use href="assets/img/sprite.svg#icon-phone"></use></svg
+                >949-292-1252</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer__copyright center-text">
+        Sport Center © <span id="year"></span> All rights reserved.
+        <div class="footer__social mt-tiny">
+          <div class="footer__social-box">
+            <a href="#" target="_blank">
+              <svg class="footer__social-icon">
+                <use href="assets/img/sprite.svg#icon-instagram"></use>
+              </svg>
+            </a>
+          </div>
+          <div class="footer__social-box">
+            <a href="#" target="_blank">
+              <svg class="footer__social-icon">
+                <use href="assets/img/sprite.svg#icon-facebook"></use>
+              </svg>
+            </a>
+          </div>
+          <div class="footer__social-box">
+            <a href="#" target="_blank">
+              <svg class="footer__social-icon">
+                <use href="assets/img/sprite.svg#icon-twitter"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- ==== CART MODAL ==== -->
+    <div class="cart cart__hidden">
+      <div class="cart__container">
+        <h2 class="cart__heading-2 mt-tiny center-text">Your Items</h2>
+        <button class="cart__close close-modal">
+          <svg class="cart__close">
+            <use href="assets/img/sprite.svg#icon-cross"></use>
+          </svg>
+        </button>
+        <div class="cart__items">
+          <div class="cart__item">
+            <img
+              src="assets/img/latest/latest-1.jpg"
+              alt="item"
+              class="cart__img"
+            />
+            <h5 class="heading-5 cart__item-title">Nike Therma</h5>
+            <h5 class="heading-5">Color</h5>
+            <input type="number" class="cart__item-count" min="0" value="1" />
+            <span class="cart__item-price">$50</span>
+            <button class="cart__item-remove">
+              <svg class="cart__item-remove-icon">
+                <use href="assets/img/sprite.svg#icon-trash"></use>
+              </svg>
+            </button>
+          </div>
+
+          <div class="cart__item-bottom">
+            <h5 class="heading-5 cart__item-total mt-tiny">
+              Total: <span class="total">$50</span>
+            </h5>
+          </div>
+          <button class="btn cart__item-button" type="submit">
+            Proceed to checkout
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="cart__overlay cart__overlay-hidden"></div>
+
+    <!-- ==== PROGRESS BAR ==== -->
+    <div class="progress" id="progress">
+      <div class="progress-value" id="progress-value">
+        <svg class="progress-icon">
+          <use href="assets/img/sprite.svg#icon-arrow-up"></use>
+        </svg>
+      </div>
+    </div>
+
+    <!-- ==== PRELOADER ==== -->
+    <div class="preloader">
+      <img src="assets/img/preloader.gif" alt="gif" class="preloader-gif" />
+    </div>
+
+    <!-- ========= JAVASCRIPT ========= -->
+
+    <!-- SCROLL REVEAL -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <!-- SWIPER JS -->
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <!-- CART JS -->
+    <script src="assets/js/cart.js"></script>
+    <!-- MAIN JS -->
+    <script src="assets/js/index.js"></script>
+  </body>
+</html>

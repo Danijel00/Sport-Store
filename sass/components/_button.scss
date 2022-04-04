@@ -1,0 +1,92 @@
+%login-btns {
+  border-radius: 5rem;
+  padding: 1.25rem 3.5rem;
+  font-weight: 600;
+  color: var(--color-white);
+  border-radius: 5rem;
+}
+
+.btn {
+  &,
+  &:link,
+  &:visited {
+    display: inline-block;
+    font-size: 1.3rem;
+    padding: 1.5rem 2.5rem;
+    border: none;
+    font-weight: 600;
+    font-family: inherit;
+    text-transform: uppercase;
+    transition: all 0.3s;
+    letter-spacing: 2px;
+    cursor: pointer;
+  }
+
+  &:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 1rem 1.5rem var(--shadow-5);
+  }
+
+  &:active {
+    outline: none;
+    transform: translateY(0);
+    box-shadow: 0 0.5rem 1rem var(--shadow-5);
+  }
+
+  &::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all 0.4s;
+  }
+
+  &:hover::after {
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0;
+    background-color: var(--color-white);
+  }
+
+  // WHITE BTN
+  &--white {
+    border: 1px solid var(--color-white);
+    background-color: transparent;
+    color: var(--color-white);
+
+    &:hover {
+      background-color: var(--color-white);
+      color: var(--color-black-1);
+    }
+  }
+
+  // SIGN IN / SIGN UP FORM BUTTONS
+  &--sing-in-up {
+    @extend %login-btns;
+    background-color: var(--color-red);
+
+    &::after {
+      border-radius: inherit;
+      background-color: var(--color-red);
+    }
+  }
+
+  &--ghost {
+    background-color: transparent;
+    @extend %login-btns;
+    border: 1px solid var(--color-white);
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    font-family: inherit;
+    letter-spacing: 1px;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+
+    &:hover {
+      background-color: var(--shadow-4);
+    }
+  }
+}
