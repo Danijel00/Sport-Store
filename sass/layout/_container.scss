@@ -11,7 +11,8 @@
     // Make sure we always have a margin of 60px
     [center-end] minmax(3rem, 1fr)
     [full-end];
-
+  overflow: hidden;
+  
   // RESPONSIVE MEDIA
   @media only screen and (max-width: $bp-small) {
     grid-template-rows: 80vh repeat(7, min-content);
