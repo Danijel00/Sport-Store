@@ -229,9 +229,7 @@
     &__logo {
       margin-left: 1rem;
     }
-    &__menu {
-      height: 70%;
-    }
+
     &__burger {
       &.active &-line:nth-child(3) {
         transform: translateY(-8px) rotate(-45deg);
