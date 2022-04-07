@@ -5,5 +5,6 @@ E-commerce website
 - Libraries used in this project: SR(Scroll reveal), and Swiper.
 
 - RUN PROJECT:
+- 
 a) write npm start in terminal
 b) use live serv
