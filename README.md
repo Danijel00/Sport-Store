@@ -1,6 +1,6 @@
-# Sport-Store
-E-commerce website 
+------- E-commerce store -------
 
+- FULLY RESPONSIVE
 - Technologies used: HTML/SASS/JavaScript
 - Libraries used in this project: SR(Scroll reveal), and Swiper.
 
